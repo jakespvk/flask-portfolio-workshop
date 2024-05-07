@@ -1,0 +1,15 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<h3>Create Article</h3>
+<form method="post" action="/articles">
+    <label>Article Title:</label>
+    <input name="title" placeholder="Insert title here..." id="title-text">
+    <br>
+    <label>Article Content:</label>
+    <textarea name="content" placeholder="Insert content here..." id="content-text"></textarea>
+    <br>
+    <button type="submit" id="submit-button">Submit Article</button>
+</form>
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+{% endblock %}

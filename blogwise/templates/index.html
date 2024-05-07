@@ -1,0 +1,14 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<nav>
+    <button href="/articles/all">test</button>
+    <button href="">test</button>
+    <button href="">test</button>
+    <button href="">test</button>
+</nav>
+{% for article in articles %}
+<h3>{{ article.title }}</h3>
+<p>{{ article.content }}</p>
+{% endfor %}
+{% endblock %}

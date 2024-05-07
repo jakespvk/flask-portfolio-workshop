@@ -1,0 +1,10 @@
+Flask==3.0.0
+Flask-DebugToolbar
+typing-extensions
+
+# PROD
+python-dotenv
+
+# DEV
+Faker
+ipython

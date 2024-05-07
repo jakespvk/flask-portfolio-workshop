@@ -1,0 +1,6 @@
+from .common import *
+
+DEBUG = True 
+DB_NAME = 'blogwise.db'
+DB_URI = f"{PROJECT_PATH}/{DB_NAME}"
+DEBUG_TB_INTERCEPT_REDIRECTS = False
